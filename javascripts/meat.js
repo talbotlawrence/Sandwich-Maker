@@ -1,5 +1,7 @@
 "use strict";
 
+console.log("Hello from the meat");
+
 var meatCosts = {
 	"ham": 			2.00,
 	"turkey": 		1.50,
@@ -8,13 +10,25 @@ var meatCosts = {
 	"hamburger": 	1.50 
 };
 
-var SandwichMaker = (function(maker) {
+//////////////////////////////////////////////////////////////////////////
+var meatPrices;
 
-  var meatPrices;
+maker.addMeat = function() {
+	return ???;
+};
 
-  maker.addMeat = function() {
-    return ???;
-  };
+return maker;
+//////////////////////////////////////////////////////////////////////////
+let getter = function(){
+	console.log("", );
+	return ;
+};
 
-  return maker;
-})(SandwichMaker);
+let setter = function(who){
+	keyplayers.push(who);
+	console.log("", );
+};
+
+module.exports = {
+	getEvil, setEvil
+};
