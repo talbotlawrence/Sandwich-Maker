@@ -30,5 +30,5 @@ let setter = function(who){
 };
 
 module.exports = {
-	getEvil, setEvil
+	getter, setter
 };

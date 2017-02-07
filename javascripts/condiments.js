@@ -7,3 +7,17 @@ var condimentsCosts = {
 	"salt": 			.10,
 	"pepper": 			.10
 };
+
+var getter = function(){
+	console.log("", );
+	return ;
+};
+
+var setter = function(who){
+	keyplayers.push(who);
+	console.log("", );
+};
+
+module.exports = {
+	getter, setter
+};
