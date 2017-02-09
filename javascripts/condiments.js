@@ -1,5 +1,7 @@
 "use strict";
 
+let sandwichmaker = require("./sandwichmaker.js");
+
 var condimentsCosts = {
 	"ketchup": 			.25,
 	"mustard": 			.25,
@@ -8,16 +10,14 @@ var condimentsCosts = {
 	"pepper": 			.10
 };
 
-var getter = function(){
-	console.log("", );
-	return ;
+let addCondimentsCost = function(condiments) {
+	sandwichmaker.addTopping(condimentsCosts.condiments);
 };
 
-var setter = function(who){
-	keyplayers.push(who);
-	console.log("", );
+let subtractCondimentsCost = function(condiments) {
+	sandwichmaker.subtractTopping(condimentsCosts.condiments);
 };
 
 module.exports = {
-	getter, setter
+	addCondimentsCost, subtractCondimentsCost
 };

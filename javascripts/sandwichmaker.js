@@ -1,25 +1,22 @@
 "use strict";
 
-var SandwichMaker = (function() {
-  var totalPrice = 0;
+var totalPrice = 0;
 
-  return {
-    addTopping: function(toppingPrice) {
-      totalPrice += toppingPrice;
-    }
-  };
-})();
-//////////////////////////////////////////////////////////////////////////
-var getter = function(){
-	console.log("", );
-	return ;
+var addTopping = function(toppingPrice) {
+  totalPrice += toppingPrice;
+  return totalPrice;
 };
 
-var setter = function(who){
-	keyplayers.push(who);
-	console.log("", );
+var subtractTopping = function(toppingPrice) {
+  totalPrice -= toppingPrice;
+  return totalPrice;
+};
+
+var getTotalCost = function() {
+  var showCost = document.getElementById("cost").innerHTML;
+  showCost = totalPrice.toFixed(2);
 };
 
 module.exports = {
-	getter, setter
+	addTopping, subtractTopping, getTotalPrice
 };

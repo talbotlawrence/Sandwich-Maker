@@ -1,6 +1,6 @@
 "use strict";
 
-//var sandwichmaker = require("./sandwichmaker.js");
+let sandwichmaker = require("./sandwichmaker.js");
 
 var breadCosts = {
 	"sourdough": 		2.00,
@@ -10,16 +10,14 @@ var breadCosts = {
 	"ciabatta": 		3.50 
 };
 
-var getter = function(){
-	console.log("", );
-	return ;
+let addBreadCost = function(bread) {
+	sandwichmaker.addTopping(breadCosts.bread);
 };
 
-var setter = function(who){
-	keyplayers.push(who);
-	console.log("", );
+let subtractBreadCost = function(bread) {
+	sandwichmaker.subtractTopping(breadCosts.bread);
 };
 
 module.exports = {
-	getter, setter
+	addBreadCost, subtractBreadCost
 };

@@ -1,5 +1,7 @@
 "use strict";
 
+let sandwichmaker = require("./sandwichmaker.js");
+
 var cheeseCosts = {
 	"american": 		.75,
 	"chedder": 			.75,
@@ -8,16 +10,14 @@ var cheeseCosts = {
 	"swiss": 			.50 
 };
 
-var getter = function(){
-	console.log("", );
-	return ;
+let addCheeseCost = function(cheese) {
+	sandwichmaker.addTopping(cheeseCosts.cheese);
 };
 
-var setter = function(who){
-	keyplayers.push(who);
-	console.log("", );
+let subtractCheeseCost = function(cheese) {
+	sandwichmaker.subtractTopping(cheeseCosts.cheese);
 };
 
 module.exports = {
-	getter, setter
+	addCheeseCost, subtractCheeseCost
 };

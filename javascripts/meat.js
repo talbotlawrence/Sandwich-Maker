@@ -1,6 +1,6 @@
 "use strict";
 
-console.log("Hello from the meat");
+let sandwichmaker = require("./sandwichmaker.js");
 
 var meatCosts = {
 	"ham": 			2.00,
@@ -10,25 +10,14 @@ var meatCosts = {
 	"hamburger": 	1.50 
 };
 
-//////////////////////////////////////////////////////////////////////////
-var meatPrices;
-
-maker.addMeat = function() {
-	return ???;
+let addMeatCost = function(meat) {
+	sandwichmaker.addTopping(meatCosts.meat);
 };
 
-return maker;
-//////////////////////////////////////////////////////////////////////////
-let getter = function(){
-	console.log("", );
-	return ;
-};
-
-let setter = function(who){
-	keyplayers.push(who);
-	console.log("", );
+let subtractMeatCost = function(meat) {
+	sandwichmaker.subtractTopping(meatCosts.meat);
 };
 
 module.exports = {
-	getter, setter
+	addMeatCost, subtractMeatCost
 };
