@@ -1,20 +1,20 @@
 "use strict";
 
-let sandwichmaker = require("./sandwichmaker.js");
+var sandwichmaker = require("./sandwichmaker.js");
 
 var cheeseCosts = {
-	"american": 		.75,
-	"chedder": 			.75,
-	"colby": 			.50,
-	"pepper-jack": 		.85,
-	"swiss": 			.50 
+	"american": 		0.75,
+	"chedder": 			0.75,
+	"colby": 				0.50,
+	"pepper-jack": 	0.85,
+	"swiss": 				0.50 
 };
 
-let addCheeseCost = function(cheese) {
+var addCheeseCost = function(cheese) {
 	sandwichmaker.addTopping(cheeseCosts.cheese);
 };
 
-let subtractCheeseCost = function(cheese) {
+var subtractCheeseCost = function(cheese) {
 	sandwichmaker.subtractTopping(cheeseCosts.cheese);
 };
 

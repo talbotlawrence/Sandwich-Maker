@@ -1,22 +1,23 @@
 "use strict";
 
-var totalPrice = 0;
+var totalCost = 0;
 
-var addTopping = function(toppingPrice) {
-  totalPrice += toppingPrice;
-  return totalPrice;
+var addTopping = function(toppingCost) {
+  totalCost += toppingCost;
+  return totalCost;
 };
 
-var subtractTopping = function(toppingPrice) {
-  totalPrice -= toppingPrice;
-  return totalPrice;
+var subtractTopping = function(toppingCost) {
+  totalCost -= toppingCost;
+  return totalCost;
 };
 
 var getTotalCost = function() {
   var showCost = document.getElementById("cost").innerHTML;
-  showCost = totalPrice.toFixed(2);
+	showCost.appendChild(totalCost);
+	// return showCost;
 };
 
 module.exports = {
-	addTopping, subtractTopping, getTotalPrice
+	addTopping, subtractTopping, getTotalCost
 };

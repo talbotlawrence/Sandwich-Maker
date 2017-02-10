@@ -1,20 +1,20 @@
 "use strict";
 
-let sandwichmaker = require("./sandwichmaker.js");
+var sandwichmaker = require("./sandwichmaker.js");
 
 var condimentsCosts = {
-	"ketchup": 			.25,
-	"mustard": 			.25,
-	"honey-mustard": 	.50,
-	"salt": 			.10,
-	"pepper": 			.10
+	"ketchup": 				0.25,
+	"mustard": 				0.25,
+	"honey-mustard": 	0.50,
+	"salt": 					0.10,
+	"pepper": 				0.10
 };
 
-let addCondimentsCost = function(condiments) {
+var addCondimentsCost = function(condiments) {
 	sandwichmaker.addTopping(condimentsCosts.condiments);
 };
 
-let subtractCondimentsCost = function(condiments) {
+var subtractCondimentsCost = function(condiments) {
 	sandwichmaker.subtractTopping(condimentsCosts.condiments);
 };
 

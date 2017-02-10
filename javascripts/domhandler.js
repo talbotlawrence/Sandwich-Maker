@@ -1,65 +1,61 @@
 "use strict";
 
-let sandwichmaker = require("./sandwichmaker.js");
+var sandwichmaker = require("./sandwichmaker.js");
+console.log(sandwichmaker);
+
 var finalSandwichPrice = 0;
 
-// meatChooser.addEventListener("change", function(event) {
-//   selectedTopping = event.target.value;
-
-// });
-
-let myBread = document.getElementById("bread");
+var myBread = document.getElementById("bread");
 myBread.addEventListener("change", function(event) {
-	if (checked) {
-		addBreadCost();
+	var breadValue = event.target.value;
+	if (event.target.checked === true) {
+		sandwichmaker.addBreadCost(breadValue);
 	} else {
-		subtractBreadCost();
+		sandwichmaker.subtractBreadCost(breadValue);
 	}
 });
 
-let myCheese = document.getElementById("cheese");
+var myCheese = document.getElementById("cheese");
 myCheese.addEventListener("change", function(event) {
-	if (checked) {
-		addCheeseCost();
+	var cheeseValue = event.target.value;
+	if (event.target.checked === true) {
+		sandwichmaker.addCheeseCost(cheeseValue);
 	} else {
-		subtractCheeseCost();
+		sandwichmaker.subtractCheeseCost(cheeseValue);
 	}
 });
 
-let myCondiments = document.getElementById("condiments");
+var myCondiments = document.getElementById("condiments");
 myCondiments.addEventListener("change", function(event) {
-	if (checked) {
-		addCondimentsCost();
+	var condimentsValue = event.target.value;
+	if (event.target.checked === true) {
+		sandwichmaker.addCondimentsCost(condimentsValue);
 	} else {
-		subtractCondimentsCost();
+		sandwichmaker.subtractCondimentsCost(condimentsValue);
 	}
 });
 
-let myMeat = document.getElementById("meat");
+var myMeat = document.getElementById("meat");
 myMeat.addEventListener("change", function(event) {
-	if (checked) {
-		addMeatCost();
+	var meatValue = event.target.value;
+	if (event.target.checked === true) {
+		sandwichmaker.addMeatCost(meatValue);
 	} else {
-		subtractMeatCost();
+		sandwichmaker.subtractMeatCost(meatValue);
 	}
 });
 
-let myVeggies = document.getElementById("veggies");
+var myVeggies = document.getElementById("veggies");
 myVeggies.addEventListener("change", function(event) {
-	if (checked) {
-		addVeggiesCost();
+	var veggieValue = event.target.value;
+	if (event.target.checked === true) {
+		sandwichmaker.addVeggiesCost(veggieValue);
 	} else {
-		subtractVeggiesCost();
+		sandwichmaker.subtractVeggiesCost(veggieValue);
 	}
 });
 
-
-let mySubmit = document.getElementById("submit");
-mySubmit.addEventListener("click", showSandwichCost);
-
-let showSandwichCost = function() {
+var mySubmit = document.getElementById("submit");
+mySubmit.addEventListener("click", function() {
 	sandwichmaker.getTotalCost();
-}; 
-
-/////////////////////////////////////////////////////////////////////////////////////
-// var selectedTopping;
+});
