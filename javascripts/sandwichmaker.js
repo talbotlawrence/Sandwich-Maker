@@ -1,4 +1,5 @@
 "use strict";
+console.log("Hits away");
 
 var totalCost = 0;
 
@@ -13,9 +14,10 @@ var subtractTopping = function(toppingCost) {
 };
 
 var getTotalCost = function() {
-  var showCost = document.getElementById("cost").innerHTML;
-	showCost.appendChild(totalCost);
-	// return showCost;
+  var showCost = document.getElementById("cost");
+	showCost.innerHTML = `
+		<h2>${totalCost}</h2>
+		`;
 };
 
 module.exports = {

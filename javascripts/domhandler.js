@@ -55,7 +55,8 @@ myVeggies.addEventListener("change", function(event) {
 	}
 });
 
-var mySubmit = document.getElementById("submit");
+var mySubmit = document.getElementById("submitButton");
 mySubmit.addEventListener("click", function() {
-	sandwichmaker.getTotalCost();
+	console.log("submit button");
+	// sandwichmaker.getTotalCost();
 });
